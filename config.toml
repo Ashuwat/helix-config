@@ -1,0 +1,14 @@
+theme = "carbon"
+
+[editor]
+idle-timeout = 50
+mouse = false
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
