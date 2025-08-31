@@ -12,3 +12,6 @@ name = "source"
 request = "launch"
 completion = [ { name = "entrypoint", completion = "filename", default = "." } ]
 args = { mode = "debug", program = "{0}"}
+
+[language-server.rust-analyzer]
+config = { check = { command = "clippy" } }
