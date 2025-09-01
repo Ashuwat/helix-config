@@ -14,4 +14,6 @@ completion = [ { name = "entrypoint", completion = "filename", default = "." } ]
 args = { mode = "debug", program = "{0}"}
 
 [language-server.rust-analyzer]
-config = { check = { command = "clippy" } }
+config = { check = { command = "clippy" }}
+
+# rust analyzer works, but python is weird
