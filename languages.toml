@@ -1,5 +1,6 @@
 [[language]]
 name = "python"
+name = "rust"
 
 [language.debugger]
 name = "debugpy"
