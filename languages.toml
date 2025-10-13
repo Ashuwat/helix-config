@@ -1,6 +1,5 @@
 [[language]]
 name = "python"
-name = "rust"
 
 [language.debugger]
 name = "debugpy"
@@ -13,6 +12,9 @@ name = "source"
 request = "launch"
 completion = [ { name = "entrypoint", completion = "filename", default = "." } ]
 args = { mode = "debug", program = "{0}"}
+
+[[language]]
+name = "rust"
 
 [language-server.rust-analyzer]
 config = { check = { command = "clippy" }}
