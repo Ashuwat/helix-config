@@ -1,3 +1,10 @@
+
+[language-server.rust-analyzer]
+config = { check = { command = "clippy" } }
+
+[language-server.gopls]
+command = "gopls"
+
 [[language]]
 name = "python"
 
@@ -5,18 +12,21 @@ name = "python"
 name = "debugpy"
 transport = "stdio"
 command = "python3"
-args = ["-m",  "debugpy.adapter"]
+args = ["-m", "debugpy.adapter"]
 
 [[language.debugger.templates]]
 name = "source"
 request = "launch"
-completion = [ { name = "entrypoint", completion = "filename", default = "." } ]
-args = { mode = "debug", program = "{0}"}
+completion = [{ name = "entrypoint", completion = "filename", default = "." }]
+args = { mode = "debug", program = "{0}" }
 
 [[language]]
 name = "rust"
+language-servers = ["rust-analyzer"]
 
-[language-server.rust-analyzer]
-config = { check = { command = "clippy" }}
+[[language]]
+name = "go"
+language-servers = ["gopls"]
+formatter = { command = "goimports" }
+auto-format = true
 
-# rust analyzer works, but python is weird
