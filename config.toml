@@ -1,4 +1,5 @@
-theme = "carbon"
+theme = "catppuccin_latte"
+# theme = "carbon"
 
 [editor]
 idle-timeout = 50
